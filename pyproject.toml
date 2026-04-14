@@ -40,4 +40,5 @@ dependencies = [
     "dotenv>=0.9.9",
     "pypandoc>=1.17",
     "pandoc>=2.4",
+    "langchain-huggingface>=1.2.1",
 ]

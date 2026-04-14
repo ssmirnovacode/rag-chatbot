@@ -2,6 +2,11 @@
 
 Simple chatbot designed to answer user's questions based on the provided data.
 
+## How it works
+
+1. Data is loaded and split into chunks using openai/gpt-4.1-nano model (wip - will be model agnostic in the future)
+2. Chunks are passed to encoder model and saved in Chroma vector database.
+
 ## Setup
 
 1. run `uv sync`
@@ -17,5 +22,5 @@ Simple chatbot designed to answer user's questions based on the provided data.
    │ └── doc4.md
    ....
 
-3. run `uv run encoder.py` to encode the data and save it in a vector database.
+3. run `uv run encode.py` to encode the data and save it in a vector database.
 4. run `uv run answer.py`
